@@ -1,0 +1,384 @@
+body{
+    margin: 0px;
+    color: #fff;
+    font-family: sans-serif;
+}
+
+nav{
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    width: 100%;
+    z-index: 5;
+}
+
+.navbar{
+    display: flex;
+    justify-content:space-between;
+    padding: 30px 30px;   
+}
+
+.brand-content{
+    text-decoration: none;
+    font-size: 50px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.navbar-content{
+    list-style-type: none;
+    display: flex;
+    color: #fff;
+
+}
+
+.nav-item{
+    padding: 0px 20px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+header{
+    background-image: linear-gradient(rgba(23,34,65,0.5),rgba(38,34,76,0.5)), url(images/women-1.jpg);
+    padding: 0px 0px 100px;
+}
+
+.container{
+    display: flex;
+    /* margin: 20px; */
+    padding: 100px 20px;
+}
+
+.started-btn{
+    padding: 35px 30px;
+    font-size: 25px;
+    font-weight: 600;
+    background-color: #b539cf;
+    color: #fff;
+    border-style: none;
+}
+
+.started-btn:hover{
+    background-color: #fff;
+    color: #b539cf;
+    outline: 3px solid #b539cf;
+}
+
+.heading-form{
+    background-color: #fff;
+    padding: 20px;
+    border-radius:5px;
+}
+
+.form-content{
+    color: #000000;
+    text-align: center;
+    padding: 30px;
+}
+
+.form-content p{
+    color:rgb(110, 106, 106);
+}
+
+.heading-form input[type="text"],input[type="email"],input[type="url"]{
+width: 100%;
+background-color: #f3f3f3;
+padding: 20px 10px;
+margin: 10px 0px;
+border: none;
+overflow: hidden;
+}
+
+.heading-form input[type="button"]{
+
+    padding: 20px 0px;
+    margin: 10px 0px;
+    border: none;
+    font-size: 25px;
+    font-weight: 600;
+    background-color: #b539cf;
+    color: #fff;
+    width: 100%;
+}
+
+.form-container{
+    margin-left: 80px;
+}
+
+.started-container{
+
+    padding: 60px 0px;
+}
+
+.started-container h1{
+    font-size: 50px;
+}
+
+.started-container p{
+    line-height: 1.5;
+    padding: 30px 0px;
+}
+
+/************* Section: Services *************/
+
+.services{
+    margin:50px 30px;
+    margin-bottom: 80px;
+}
+
+.services-heading{
+    color: #000000;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.services > div > div{
+    color: black;
+}
+
+.services-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.services-container > div{
+    width: 400px;
+    height: 200px;
+    text-align: center;
+    padding: 80px 0px 80px;
+    /* margin:30px; */
+}
+.services-icons{
+    font-size: 50px;
+    font-weight: 700;
+    color:#b539cf;
+ }
+
+.services-container > div:hover{
+    background-color: #b539cf;
+    color:#fff;
+}
+
+.services-container > div:hover .services-icons{
+    background-color: #b539cf;
+    color:#fff;
+}
+
+/**************   section: About Us***************/
+
+
+.about-us{
+
+    padding-bottom: 100px;
+    background-color: #000000;
+}
+
+.about-us-content{
+    display: flex;
+}
+
+.about-us-readmore{
+
+    flex: 1 1 50%;
+   
+
+    padding: 100px 50px;
+}
+
+.about-us-readmore h1{
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.about-us-readmore p{
+    margin-bottom: 50px;
+}
+
+.aboutus-video{
+    flex: 1 1 50%;
+    background-image: url(images/office-3.jpg);
+    background-size: cover;
+    background-position: 50% 50%;
+    position: relative;
+}
+
+.aboutus-video > div{
+    color: #b539cf;
+    height: 100px;
+    width: 100px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.aboutus-video > div:hover{
+    color: #fff;
+    background-color: #b539cf;
+    border: 3px solid #fff;
+    width: 94px;
+    height: 94px;
+
+}
+
+
+/**************   section: Selected Projects ***************/
+
+
+.selected-projects{
+background-color: black;
+padding: 70px 0px;
+}
+
+.projects-heading{
+    text-align: center;
+
+}
+
+.projects-heading h1{
+    font-size: 35px;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+.projects-heading p{
+    text-transform: uppercase;
+    color: #b539cf;
+    font-weight: 700;
+}
+
+
+
+.projects-boxs{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.Project-1{
+    flex: 1 1 30%;
+    width: 30%; 
+    position: relative; 
+    background-color: #b539cf;
+}
+
+.project-image{
+    width: 100%;
+}
+
+.project-content{
+    position: absolute;
+    top: 37%;
+    left: 37%;
+    text-align: center;
+    opacity: 0;
+}
+
+.Project-1:hover .project-image{
+    opacity: 0.2;
+}
+
+.Project-1:hover .project-content{
+    opacity: 1;
+}
+
+.project-content h3{
+    font-size: 25px;
+    margin-bottom: 0;
+}
+
+.project-content p{
+    margin-top: 0;
+}
+
+
+
+
+/**************  Latest News ****************/
+
+
+
+.latest-news-heading{
+    text-align: center;
+    color: #000000;
+    padding: 60px 0px;
+}
+
+
+.latest-news-heading h1{
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.latest-news-heading p{
+    color: #747474;
+}
+
+
+.latest-news-boxs{
+    display: flex;
+}
+
+.Depart-1{
+flex: 1 1 30%;
+margin: 0px 15px;
+}
+
+.people-image{
+    width: 100%;
+    filter: saturate(0);
+}
+
+.depart-content h5,p{
+    color: #747474;
+}
+
+.depart-content h3{
+    color: #000000;
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.depart-content h5 a{
+    text-decoration: none;
+    color: #b539cf;
+    font-size: 15px;
+    font-weight: 500;
+    padding-bottom: 3px;
+    border-bottom: 1px solid #747474;
+}
+
+.Depart-1:hover .people-image{
+    filter: saturate(2);
+}
+
+.Depart-1:hover .depart-content h5{
+    color: black;
+}
+
+.Depart-1:hover .depart-content h5 a{
+    border-color: #b539cf;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
